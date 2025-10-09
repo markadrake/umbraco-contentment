@@ -9,6 +9,7 @@ using Umbraco.Cms.Core.Models.Editors;
 using Umbraco.Cms.Core.PropertyEditors;
 using Umbraco.Cms.Core.Serialization;
 using Umbraco.Cms.Core.Strings;
+using Umbraco.Community.Contentment.Extensions;
 using Umbraco.Extensions;
 
 namespace Umbraco.Community.Contentment.DataEditors

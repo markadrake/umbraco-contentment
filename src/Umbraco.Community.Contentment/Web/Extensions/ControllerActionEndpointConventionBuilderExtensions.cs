@@ -24,15 +24,14 @@ namespace Umbraco.Extensions
         private static IPublishedContent? FindContentByDomain(ActionExecutingContext actionExecutingContext)
         {
             var accessor = actionExecutingContext.HttpContext.RequestServices.GetRequiredService<IUmbracoContextAccessor>();
-            if (accessor?.TryGetUmbracoContext(out var ctx) == true)
+            if (accessor?.TryGetUmbracoContext(out var ctx) != true)
             {
-                var domain = DomainUtilities.SelectDomain(ctx.Domains?.GetAll(false), ctx.CleanedUmbracoUrl);
-                var content = ctx.Content?.GetById(domain?.ContentId ?? -1);
-
-                return content ?? ctx.Content?.GetAtRoot().FirstOrDefault();
+                return default;
             }
 
-            return default;
+            var domain = DomainUtilities.SelectDomain(ctx.Domains?.GetAll(false), ctx.CleanedUmbracoUrl);
+            var content = ctx.Content?.GetById(domain?.ContentId ?? -1);
+            return content;
         }
     }
 }

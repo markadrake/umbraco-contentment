@@ -6,6 +6,7 @@ using Umbraco.Cms.Core.Manifest;
 using Umbraco.Cms.Infrastructure.Manifest;
 using Umbraco.Community.Contentment.Composing;
 using Umbraco.Community.Contentment.DataEditors;
+using Umbraco.Community.Contentment.Extensions;
 using Umbraco.Extensions;
 
 namespace Umbraco.Community.Contentment;

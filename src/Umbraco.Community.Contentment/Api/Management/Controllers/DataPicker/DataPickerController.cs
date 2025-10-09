@@ -10,6 +10,7 @@ using Umbraco.Cms.Api.Management.ViewModels.DataType;
 using Umbraco.Cms.Core.Models;
 using Umbraco.Cms.Core.Services;
 using Umbraco.Community.Contentment.DataEditors;
+using Umbraco.Community.Contentment.Extensions;
 using Umbraco.Extensions;
 
 namespace Umbraco.Community.Contentment.Api.Management;

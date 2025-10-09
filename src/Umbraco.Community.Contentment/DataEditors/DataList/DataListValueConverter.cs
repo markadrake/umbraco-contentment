@@ -10,6 +10,7 @@ using Umbraco.Cms.Core.Models.PublishedContent;
 using Umbraco.Cms.Core.PropertyEditors;
 using Umbraco.Cms.Core.PropertyEditors.DeliveryApi;
 using Umbraco.Cms.Core.Serialization;
+using Umbraco.Community.Contentment.Extensions;
 using Umbraco.Extensions;
 
 namespace Umbraco.Community.Contentment.DataEditors

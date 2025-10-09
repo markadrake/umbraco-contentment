@@ -10,6 +10,7 @@ using Umbraco.Cms.Core.Models.PublishedContent;
 using Umbraco.Cms.Core.PropertyEditors;
 using Umbraco.Cms.Core.PublishedCache;
 using Umbraco.Cms.Core.Web;
+using Umbraco.Community.Contentment.Extensions;
 using Umbraco.Community.Contentment.Services;
 using Umbraco.Extensions;
 
